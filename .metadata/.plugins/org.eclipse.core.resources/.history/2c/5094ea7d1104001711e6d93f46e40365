@@ -1,0 +1,8 @@
+package br.com.syncode.entidades;
+
+public class Pessoa {
+	
+	private PessoaFisica pf;
+	private PessoaJuridica pj;
+
+}

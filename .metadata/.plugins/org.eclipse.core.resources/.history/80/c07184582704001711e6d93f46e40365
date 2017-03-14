@@ -1,0 +1,9 @@
+package br.com.syncode.entidades;
+
+public class Fornecedor {
+	
+	private Long codigoFornecedor;
+	private Cliente cliente;
+	private Servico servico;
+
+}

@@ -1,0 +1,10 @@
+package br.com.syncode.entidades;
+
+public class Servico {
+	
+	private Long codigo;
+	private String descricao;
+	private Fornecedor fornecedor;
+	private TipoServico tipo;
+
+}

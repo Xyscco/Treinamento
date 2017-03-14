@@ -1,0 +1,9 @@
+package br.com.syncode.entidades;
+
+public class Entrega {
+	
+	private Long codEntrega;
+	private Pedido pedido;
+	private Entregador entregador;
+
+}

@@ -1,0 +1,10 @@
+package br.com.syncode.entidades;
+
+public class Pedido {
+	
+	private Long codPedido;
+	private Servico servico;
+	private Funcionario funcREsponsavel;
+	private Cliente cliente;
+
+}

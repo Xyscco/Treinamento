@@ -1,0 +1,15 @@
+package br.com.syncode.entidades;
+
+import br.com.syncode.enumerados.StatusServico;
+
+public class Pedido {
+	
+	private Long codPedido;
+	private Servico servico;
+	private Funcionario funcREsponsavel;
+	private Cliente cliente;
+	private StatusServico status;
+	
+	
+
+}

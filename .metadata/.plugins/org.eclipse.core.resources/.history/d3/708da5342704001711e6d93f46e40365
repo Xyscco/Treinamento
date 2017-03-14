@@ -1,0 +1,89 @@
+package br.com.syncode.entidades;
+
+public class Cliente {
+
+	private Long codCliente;
+	private Pessoa pessoa;
+	private String login;
+	private String senha;
+	private Endereco endereco;
+
+	public Cliente() {
+		super();
+	}
+
+	public Cliente(Long codCliente, Pessoa pessoa, String login, String senha, Endereco endereco) {
+		super();
+		this.codCliente = codCliente;
+		this.pessoa = pessoa;
+		this.login = login;
+		this.senha = senha;
+		this.endereco = endereco;
+	}
+
+	public Long getCodCliente() {
+		return codCliente;
+	}
+
+	public void setCodCliente(Long codCliente) {
+		this.codCliente = codCliente;
+	}
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+
+	public String getLogin() {
+		return login;
+	}
+
+	public void setLogin(String login) {
+		this.login = login;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((codCliente == null) ? 0 : codCliente.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		if (codCliente == null) {
+			if (other.codCliente != null)
+				return false;
+		} else if (!codCliente.equals(other.codCliente))
+			return false;
+		return true;
+	}
+
+}

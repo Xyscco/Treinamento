@@ -1,0 +1,95 @@
+package br.com.syncode.entidades;
+
+import java.util.Date;
+
+import br.com.syncode.enumerados.StatusServico;
+
+public class Pedido {
+
+	private Long codPedido;
+	private Servico servico;
+	private int quantidade;
+	private Date dataSolicitacao;
+	private Date dataEntrega;
+	private Funcionario funcREsponsavel;
+	private Cliente cliente;
+	private StatusServico status;
+
+	public Pedido() {
+		super();
+	}
+
+	public Long getCodPedido() {
+		return codPedido;
+	}
+
+	public void setCodPedido(Long codPedido) {
+		this.codPedido = codPedido;
+	}
+
+	public Servico getServico() {
+		return servico;
+	}
+
+	public void setServico(Servico servico) {
+		this.servico = servico;
+	}
+
+	public int getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+
+	public Funcionario getFuncREsponsavel() {
+		return funcREsponsavel;
+	}
+
+	public void setFuncREsponsavel(Funcionario funcREsponsavel) {
+		this.funcREsponsavel = funcREsponsavel;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public StatusServico getStatus() {
+		return status;
+	}
+
+	public void setStatus(StatusServico status) {
+		this.status = status;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((codPedido == null) ? 0 : codPedido.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pedido other = (Pedido) obj;
+		if (codPedido == null) {
+			if (other.codPedido != null)
+				return false;
+		} else if (!codPedido.equals(other.codPedido))
+			return false;
+		return true;
+	}
+
+}

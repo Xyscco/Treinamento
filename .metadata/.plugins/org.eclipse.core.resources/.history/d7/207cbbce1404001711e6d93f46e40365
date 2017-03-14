@@ -1,0 +1,56 @@
+package br.com.syncode.entidades;
+
+import br.com.syncode.enumerados.StatusServico;
+
+public class Pedido {
+	
+	private Long codPedido;
+	private Servico servico;
+	private int quantidade;
+	private Funcionario funcREsponsavel;
+	private Cliente cliente;
+	private StatusServico status;
+	public Pedido() {
+		super();
+	}
+	public Long getCodPedido() {
+		return codPedido;
+	}
+	public void setCodPedido(Long codPedido) {
+		this.codPedido = codPedido;
+	}
+	public Servico getServico() {
+		return servico;
+	}
+	public void setServico(Servico servico) {
+		this.servico = servico;
+	}
+	public int getQuantidade() {
+		return quantidade;
+	}
+	public void setQuantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+	public Funcionario getFuncREsponsavel() {
+		return funcREsponsavel;
+	}
+	public void setFuncREsponsavel(Funcionario funcREsponsavel) {
+		this.funcREsponsavel = funcREsponsavel;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	public StatusServico getStatus() {
+		return status;
+	}
+	public void setStatus(StatusServico status) {
+		this.status = status;
+	}
+	
+	
+	
+
+}

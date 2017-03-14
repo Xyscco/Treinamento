@@ -1,0 +1,11 @@
+package br.com.syncode.entidades;
+
+public class PessoaJuridica {
+	
+	private String razaoSocial;
+	private String cnpj;
+	private String inscricaoEstadual;
+	private String telfixo;
+	private String telCelular;
+
+}
