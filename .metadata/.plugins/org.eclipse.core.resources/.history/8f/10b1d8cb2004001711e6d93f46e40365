@@ -1,8 +1,0 @@
-package br.com.syncode.entidades;
-
-public class TipoServico {
-	
-	private Long codTipoServ;
-	private String descricao;
-
-}

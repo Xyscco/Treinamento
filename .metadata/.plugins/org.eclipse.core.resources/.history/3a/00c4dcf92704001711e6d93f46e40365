@@ -1,7 +1,0 @@
-package br.com.syncode.entidades;
-
-public class Cliente {
-
-	private Long codCliente;
-	private Usuario usuario;
-}
