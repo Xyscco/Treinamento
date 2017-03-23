@@ -11,8 +11,11 @@ public interface DAO {
 	<T extends Entidade<ID>, ID extends Serializable> void persisteObjeto(T objeto);
 
 	<T extends Entidade<ID>, ID extends Serializable> void excluiObjeto(T objeto);
+	
+	<T extends Entidade<ID>, ID extends Serializable> void atualizaObjeto(T objeto);
 
-	Entidade getObjetos(String id);
+	
+	Entidade getObjeto(String id);
 
 	Collection<Entidade> getObjetos();
 

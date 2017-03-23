@@ -1,6 +1,8 @@
 package br.com.syncode.entidades;
 
-public class Usuario {
+import br.com.syncode.Treinamento.Entidade;
+
+public class Usuario extends Entidade<String> {
 
 	private Pessoa pessoa;
 	private String login;

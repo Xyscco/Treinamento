@@ -10,7 +10,7 @@ public class Entidade<ID extends Serializable> {
 		return id;
 	}
 
-	public void setId() {
+	public void setId(ID id) {
 		this.id = id;
 	}
 
